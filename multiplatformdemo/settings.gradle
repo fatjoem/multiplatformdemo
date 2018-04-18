@@ -1,0 +1,4 @@
+rootProject.name = 'multiplatformdemo'
+
+includeFlat 'demo-common', 'demo-js', 'demo-jvm'
+
