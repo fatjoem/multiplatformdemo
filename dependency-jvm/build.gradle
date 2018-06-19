@@ -1,16 +1,11 @@
 apply plugin: 'kotlin-platform-jvm'
-apply plugin: 'application'
-
-mainClassName = 'demo.Test'
 
 repositories {
   mavenCentral()
 }
 
 dependencies {
-  expectedBy project(":demo-common")
-
-  compile project(":dependency-jvm")
+  expectedBy project(":dependency-common")
 
   compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
   testCompile "junit:junit:4.12"

@@ -1,4 +1,5 @@
 rootProject.name = 'multiplatformdemo'
 
+includeFlat 'dependency-common', 'dependency-js', 'dependency-jvm'
 includeFlat 'demo-common', 'demo-js', 'demo-jvm'
 
