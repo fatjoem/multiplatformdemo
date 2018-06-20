@@ -7,5 +7,7 @@ repositories {
 dependencies {
   expectedBy project(":demo-common")
 
+  compile project(":dependency-js")
+
   compile "org.jetbrains.kotlin:kotlin-stdlib-js:$kotlin_version"
 }
