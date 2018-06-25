@@ -4,6 +4,12 @@ repositories {
   mavenCentral()
 }
 
+compileKotlin2Js {
+  kotlinOptions.outputFile = "${buildDir}/kotlin-js/${project.name}.js"
+  kotlinOptions.moduleKind = "amd"
+  kotlinOptions.metaInfo = false
+}
+
 dependencies {
   expectedBy project(":demo-common")
 

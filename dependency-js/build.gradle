@@ -4,6 +4,15 @@ repositories {
   mavenCentral()
 }
 
+/*
+when I add this, I get compilation errors
+
+compileKotlin2Js {
+  kotlinOptions.outputFile = "${buildDir}/kotlin-js/${project.name}.js"
+  kotlinOptions.moduleKind = "amd"
+  kotlinOptions.metaInfo = false
+}*/
+
 dependencies {
   expectedBy project(":dependency-common")
 
